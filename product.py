@@ -3,7 +3,7 @@ Module: product.py
 Định nghĩa lớp Product đại diện cho một sản phẩm trong hệ thống.
 Mỗi sản phẩm có các thuộc tính: id, tên, giá, đánh giá, thương hiệu, danh mục, khuyến mãi.
 """
-
+#cac ham co ban cua du an 
 class Product:
     """
     Lớp Product biểu diễn một sản phẩm trong catalog thương mại điện tử.
