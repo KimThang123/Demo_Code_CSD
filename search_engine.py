@@ -2,7 +2,7 @@
 class SearchEngine:
     """
     Cung cấp chức năng tìm kiếm sản phẩm theo từ khóa.
-    Thuật toán: Linear scan (duyệt tuần tự) - O(n) với n là số sản phẩm.
+    Thuật toán: Linear scan (duyệt tuần tự) - O(n) với n là số sản ph
     Phù hợp với quy mô ≤500 sản phẩm.
     """
     def __init__(self, repository: ProductRepository):
