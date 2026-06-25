@@ -29,25 +29,3 @@ class Product:
         return f"{self.name} - {self.price} VND - {self.rating}sss - {self.brand} - {self.category}"
     
 
-    class SearchEngine:
-    """
-    Cung cấp chức năng tìm kiếm sản phẩm theo từ khóa.
-   
-    """
-    def __init__(self, repository: ProductRepository):
-        self.repo = repository
-
-    def search_by_keyword(self, keyword: str) -> List[Product]:
-        """
-        Tìm kiếm sản phẩm có tên chứa keyword (không phân biệt hoa/thường).
-        
-        """
-        if not keyword:
-            # Nếu từ khóa rỗng, trả về toàn bộ danh sách
-            return self.repo.get_all_products()
-        keyword_lower = keyword.lower()
-        result = []
-        for product in self.repo.get_all_products():
-            if keyword_lower in product.name.lower():
-                result.append(product)
-        return result
